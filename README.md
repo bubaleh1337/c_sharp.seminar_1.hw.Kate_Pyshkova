@@ -24,7 +24,7 @@
 
 32679 -> 6
 
-[Решение]()
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar2/task2/Program.cs)
 
 ## **Задача 3.**
 
