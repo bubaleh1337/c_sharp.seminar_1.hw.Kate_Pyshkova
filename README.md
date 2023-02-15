@@ -12,7 +12,7 @@
 
 918 -> 1
 
-[Решение]()
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar2/task1/Program.cs)
 
 ## **Задача 2.**
 
