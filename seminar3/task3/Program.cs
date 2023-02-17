@@ -8,10 +8,26 @@
 Console.Clear();
 
 Console.Write("Enter a number: ");
-int N = int.Parse(Console.ReadLine()!);
+int number = int.Parse(Console.ReadLine()!);
+int items = 1;
+int negativeNum = number;
 
-for (int i = 1; i < N; i++)
+if (number < 0)
 {
-  double result = Math.Pow(i, 3);
-  Console.Write($"{N} -> {result} | "); 
-} 
+  items = number;
+  negativeNum = -number;
+  number = -1;
+}
+
+int[] array = new int[negativeNum];
+
+for (int j = 0; items <= number; items++)
+{
+  array[j] = items * items * items;
+  j++;
+}
+ 
+for (int j = 0; j < negativeNum; j++)
+{
+  Console.WriteLine($"{negativeNum} -> {array[j]}");
+}
