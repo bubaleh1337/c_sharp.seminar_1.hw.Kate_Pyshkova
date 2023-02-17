@@ -8,7 +8,7 @@
 Console.Clear();
 
 Console.Write("Enter a number: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 // int random = new Random().Next(1, 10000); // 5684, 5, 55, 654
 // Console.WriteLine($"Our random number is {random}");
 
