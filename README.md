@@ -36,7 +36,7 @@
 
 После загрузки задания, вы можете проверить себя самостоятельно с помощью [эталонного решения](https://gbcdn.mrgcdn.ru/uploads/asset/4961655/attachment/89696eb4a14923d82ca5b8f5e6db5fe9.pdf).
 
-[Решение]()
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar2/task3/Program.cs)
 
 #
 

@@ -14,10 +14,10 @@ Console.Write("Select a number from 1 to 7: ");
 int day = int.Parse(Console.ReadLine());
 if (day <= 5) 
 {
-  Console.WriteLine($"Это будний день - {week[day-1]}");
+  Console.WriteLine($"This is a weekday - {week[day-1]}");
 }
 
 else 
 {
-  Console.WriteLine($"Это выходной день - {week[day-1]}");
+  Console.WriteLine($"This is a holiday - {week[day-1]}");
 }
