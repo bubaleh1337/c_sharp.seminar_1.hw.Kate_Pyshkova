@@ -15,7 +15,7 @@ if (9999 > number || number <= 99999)
 {
   int firstHalf = number / 1000; // 12821 / 1000 = 12
   int secondHalf = number % 100; // 12821 % 100 = 21  [21*10 = 210 + 2 = 212 = 12]
-  secondHalf = secondHalf * 10 + secondHalf % 100 / 10;
+  secondHalf = secondHalf * 10 + secondHalf % 100 / 10; 
   secondHalf %= 100;
   if (firstHalf == secondHalf)
   {
