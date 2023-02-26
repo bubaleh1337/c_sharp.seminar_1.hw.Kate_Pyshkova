@@ -15,7 +15,7 @@ int[] GetArray()
   int[] array = new int [size];
   for (int i = 0; i < size; i++)
   {
-    array[i] = new Random().Next(99, 1000);
+    array[i] = new Random().Next(99, 999);
   }
   return array;
 }
