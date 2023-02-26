@@ -1,6 +1,37 @@
 #
 
-# __Решение домашних заданий к семинару 4. Функции.__
+# <span style="color:pink">__Решение домашних заданий к семинару 5. Функции и одномерные массивы.__</span>
+
+## **Задача 1.**
+
+Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+
+[345, 897, 568, 234] -> 2
+
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar5/task1/Program.cs)
+
+## **Задача 2.**
+
+Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+[3, 7, 23, 12] -> 19
+
+[-4, -6, 89, 6] -> 0
+
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar5/task2/Program.cs)
+
+## **Задача 3.**
+
+Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+[3 7 22 2 78] -> 76
+
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar5/task3/Program.cs)
+
+
+#
+
+# <span style="color:pink">__Решение домашних заданий к семинару 4. Функции.__</span>
 
 ## **Задача 1.**
 
@@ -39,7 +70,7 @@
 
 #
 
-# __Решение домашних заданий к семинару 3. Базовые алгоритмы. Продолжение.__
+# <span style="color:pink">__Решение домашних заданий к семинару 3. Базовые алгоритмы. Продолжение.__</span>
 
 ## **Задача 1.**
 
@@ -78,7 +109,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 #
 
-# __Решение домашних заданий к семинару 2. Базовые алгоритмы.__
+# <span style="color:pink">__Решение домашних заданий к семинару 2. Базовые алгоритмы.__</span>
 
 ## **Задача 1.**
 
@@ -120,7 +151,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
 
-# __Решение домашних заданий к семинару 1. Знакомство с языками программирования (C#).__
+# <span style="color:pink">__Решение домашних заданий к семинару 1. Знакомство с языками программирования (C#).__</span>
 
 ## **Задача 1.**
 
@@ -132,7 +163,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 22 3 9 -> 22
 
-[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/task1/Program.cs)
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar1/task1/Program.cs)
 
 ## **Задача 2.**
 
@@ -145,7 +176,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 7 -> нет
 
-[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/task2/Program.cs)
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar1/task2/Program.cs)
 
 ## **Задача 3.**
 
@@ -155,4 +186,4 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 8 -> 2, 4, 6, 8
 
-[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/task3/Program.cs)
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar1/task3/Program.cs)
