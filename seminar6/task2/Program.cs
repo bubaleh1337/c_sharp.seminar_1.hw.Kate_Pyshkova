@@ -3,27 +3,30 @@
 
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5) */
 
-Console.Clear();
+//Console.Clear();
 
-int k1 = Prompt($"Enter the number k1: ");
-int b1 = Prompt($"Enter the number b1: ");
-int k2 = Prompt($"Enter the number k2: ");
-int b2 = Prompt($"Enter the number b2: ");
+double k1 = Prompt($"Enter the number k1: ");
+double b1 = Prompt($"Enter the number b1: ");
+double k2 = Prompt($"Enter the number k2: ");
+double b2 = Prompt($"Enter the number b2: ");
 Console.Write($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} ");
 GetPoint(k1, b1, k2, b2);
 
 
-int Prompt(string message)
+
+double Prompt(string message)
 {
   Console.Write(message);
-  int num = int.Parse(Console.ReadLine()!);
+  double num = Convert.ToDouble(Console.ReadLine()!);
   return num;
 }
 
-void GetPoint(int k1, int b1, int k2, int b2)
+void GetPoint(double k1, double b1, double k2, double b2)
 {
-  int x = (b2 - b1) / (k1 - k2);
+  double x = (b1 - b2) / (k2 - k1);
 
-  int y = k1 * x + b1;
-  Console.Write($" -> ({x}; {y})");
+  double y1 = k1 * x + b1;
+  double y2 = k2 * x + b2;
+  Console.Write($" -> ({y1}; {y2})");
 }
+

@@ -20,7 +20,7 @@ b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 После загрузки задания, вы можете проверить себя самостоятельно с помощью [эталонного решения](https://gbcdn.mrgcdn.ru/uploads/asset/4961718/attachment/811994354dffb81dac69378313ee1656.pdf)
 
-[Решения ещё нет]()
+[Решение](https://github.com/bubaleh1337/c_sharp.seminar_1.hw.Kate_Pyshkova/blob/main/seminar6/task2/Program.cs)
 
 #
 
