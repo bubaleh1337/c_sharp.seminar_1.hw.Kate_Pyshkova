@@ -42,7 +42,7 @@ bool FoundElement(int[,] array, int el)
     {
       if (array[i, j] == el)
       {
-        Console.WriteLine($"{el} существует на строке {array[i, 0]} в столбце {array[0, j]}");
+        Console.WriteLine(String.Format("Number on {0}th row in {1}th column is {2}", i+1, j + 1, el));
         check = true;
         break;
       }
@@ -68,13 +68,10 @@ void PrintArray(int[,] array)
 }
 
 Console.Clear();
-int num = GetNum("Введите число, которое хотите найти: ");
 int[,] array = GetArray();
 PrintArray(array);
+int num = GetNum("Введите число, которое хотите найти: ");
 if (FoundElement(array, num) == false)
 {
   Console.WriteLine($"{num} -> такого числа в массиве нет");
 }
-/**else {
-  FoundElement(array,num);
-}**/
