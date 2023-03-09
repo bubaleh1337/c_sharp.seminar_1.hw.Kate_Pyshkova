@@ -99,6 +99,7 @@ char[,] GetLifeField(int rows, int columns)
     {
       int x = rnd.Next(2);
       lifeField[i, j] += chars[x];
+      if ()
     }
   }
   return lifeField;
@@ -116,7 +117,7 @@ void PrintLifeField(char[,] array)
   }
 }
 
-int GameOfLife(char[,] lifeField, int rows, int m_columns)
+/*int GameOfLife(char[,] lifeField, int rows, int m_columns)
 {
 
-}
+}*/
