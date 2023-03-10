@@ -99,7 +99,6 @@ char[,] GetLifeField(int rows, int columns)
     {
       int x = rnd.Next(2);
       lifeField[i, j] += chars[x];
-      if ()
     }
   }
   return lifeField;
