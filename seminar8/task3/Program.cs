@@ -8,8 +8,8 @@
 15 18 */
 
 Console.Clear();
-int[,] matrixA = {{2, 4}, {3, 2}};
-int[,] matrixB = {{3, 4}, {3, 3}};
+int[,] matrixA = GetMatrix();
+int[,] matrixB = GetMatrix();
 PrintMatrix(matrixA, matrixB);
 MultiplyMatrix(matrixA, matrixB);
 Console.WriteLine();
@@ -48,12 +48,13 @@ int[,] MultiplyMatrix(int[,] matrix1, int[,] matrix2)
 
 void PrintMatrix(int[,] a, int[,] b)
 {
-  for (int i = 0; i < a.GetLength(0) && i < b.GetLength(0); i++)
+  for (int i = 0; i < a.GetLength(0); i++)
   {
-    for (int j = 0; j < a.GetLength(1) && i < b.GetLength(1); j++)
+    for (int j = 0; j < (a.GetLength(1) + b.GetLength(1))+1; j++)
     {
-      if (j == a.GetLength(1)/2) Console.Write(" | ");
-      Console.Write(a[i, j] + " " + b[i, j]);
+      if (j < a.GetLength(1)) Console.Write(a[i, j]);
+      else if (j == a.GetLength(1)) Console.Write(" | ");
+      else { Console.Write(b[i, j - a.GetLength(1)-1]); }
     }
     Console.WriteLine();
   }
@@ -65,7 +66,7 @@ void PrintResultMatrix(int[,] resultMatrix)
   {
     for (int j = 0; j < resultMatrix.GetLength(1); j++)
     {
-      if (j == resultMatrix.GetLength(1)/2) Console.Write(" ", -2);
+      if (j == resultMatrix.GetLength(1) / 2) Console.Write(" ", -2);
       Console.Write(resultMatrix[i, j] + " ");
     }
     Console.WriteLine();
