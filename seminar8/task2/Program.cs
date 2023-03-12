@@ -15,10 +15,15 @@
 Программа считает сумму элементов в каждой строке и выдаёт 
 номер строки с наименьшей суммой элементов: 1 строка */
 
+Console.Clear();
+int[,] array = GetArray();
+PrintArray(array);
+Console.WriteLine();
+MinSum(array);
 
 int[,] GetArray()
 {
-  int[,] array = new int[4, 5];
+  int[,] array = new int[4, 4];
   for (int i = 0; i < array.GetLength(0); i++)
   {
     for (int j = 0; j < array.GetLength(1); j++)
@@ -29,28 +34,27 @@ int[,] GetArray()
   return array;
 }
 
-void GetSum(int[,] array)
+void MinSum(int[,] arr)
 {
-  int sum = 0, min = 0, i = 0;
-  for (i = 0; i < array.GetLength(0); i++)
-  {
+  int sum = 0, min = Int32.MaxValue, minRow = 0;
 
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-      sum += array[i, j];
-      min = sum;
-      if (sum > min)
-      {
-        min += min;
-        //Console.WriteLine(String.Format("Min row is {0}th row of sum {1}", i+1, sum));
-      }
-    }
-    Console.WriteLine(String.Format("Summation of {0}th row is {1}", i + 1, sum));
+  for (int i = 0; i < arr.GetLength(0); i++)
+  {
     sum = 0;
+    for (int j = 0; j < arr.GetLength(1); j++)
+    {
+      sum += arr[i, j];
+
+    }
+    Console.WriteLine("Sum of row [{0}]: {1}", (i + 1), sum);
+    if (sum < min)
+    {
+      min = sum;
+      minRow = i;
+    }
   }
   Console.WriteLine();
-
-  Console.WriteLine(String.Format("Min row is {0}th row of sum {1}", i + 1, min));
+  Console.WriteLine("Min row [{0}], min sum = {1}", (minRow + 1), min);
 }
 
 void PrintArray(int[,] array)
@@ -64,9 +68,3 @@ void PrintArray(int[,] array)
     Console.WriteLine();
   }
 }
-
-
-Console.Clear();
-int[,] array = GetArray();
-PrintArray(array);
-GetSum(array);
