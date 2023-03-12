@@ -12,7 +12,7 @@ int start = int.Parse(Console.ReadLine()!);
 Console.Write("Enter number for end: ");
 int end = int.Parse(Console.ReadLine()!);
 Console.WriteLine();
-Console.WriteLine($"M = {start}; N = {end}. -> {SortNumbers(start, end)}");
+Console.WriteLine($"M = {start}; N = {end} -> {SortNumbers(start, end)}");
 
 string SortNumbers(int start, int end)
 {
@@ -20,6 +20,6 @@ string SortNumbers(int start, int end)
   {
     return end.ToString();
   }
-  string result = SortNumbers(start+1, end) + ", " + start.ToString();
+  string result = SortNumbers(start + 1, end) + ", " + start.ToString();
   return result;
 }
